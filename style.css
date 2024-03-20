@@ -1,0 +1,69 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+nav{
+  padding: 20px;
+  display: flex;
+  gap: 30px;
+  background-color: rgb(31, 31, 31);
+  color: white;
+}
+
+.page-links{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  cursor: pointer;
+}
+
+li:hover{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  cursor: pointer;
+  color: rgb(0, 183, 255);
+}
+
+.shade {
+  background-color: rgba(0, 0, 0, 0.212);
+  width: 100%;
+  height: 70vh;
+  position: absolute;
+  top: 75px;
+}
+
+.car-wrap {
+  position: relative;
+  height: 70vh;
+  background-image: url(./assets/car-wrap.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.shade div {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.shade p {
+  font-size: larger;
+  font-weight: 600;
+  color: aliceblue;
+}
+
+.services{
+  color: aliceblue;
+  padding-top: 3rem;
+  background-image: url(./assets/black-texture.jpg);
+}
+
+.services h1{
+  text-align: center;
+  padding-bottom: 100rem;
+}
