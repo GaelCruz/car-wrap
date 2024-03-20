@@ -80,5 +80,32 @@ li:hover{
 .service-option span{
   font-size: 40px;
   text-decoration: underline;
+}
 
+.our-work-section{
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.gallery{
+  width: 1300px;
+}
+
+.gallery h1{
+  width: 100%;
+  text-align: center;
+}
+
+.gallery p{
+  text-align: center;
+}
+
+.gallery-wall{
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
 }
