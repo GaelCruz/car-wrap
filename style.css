@@ -60,10 +60,25 @@ li:hover{
 .services{
   color: aliceblue;
   padding-top: 3rem;
+  padding-bottom: 3rem;
   background-image: url(./assets/black-texture.jpg);
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
 }
 
 .services h1{
   text-align: center;
-  padding-bottom: 100rem;
+  font-size: 60px;
+  /* padding-bottom: 100rem; */
+}
+
+.service-action{
+  width: 1000px;
+}
+
+.service-option span{
+  font-size: 40px;
+  text-decoration: underline;
+
 }
