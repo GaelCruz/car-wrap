@@ -5,7 +5,7 @@
 }
 
 nav{
-  padding-left: 20px;
+  padding: 2.3rem;
   display: flex;
   gap: 30px;
   background-color: rgb(31, 31, 31);
@@ -173,11 +173,11 @@ li:hover{
 .contact-section textarea{
   border-radius: 10px;
   width: 650px;
-  height: 400px;
+  height: 300px;
 }
 
 .contact-section button{
-  padding: 0.5rem;
+  padding: 1rem;
   margin-top: 1rem;
   border-radius: 5px;
   background-color: rgb(65, 122, 245);
@@ -189,6 +189,7 @@ li:hover{
   display: flex;
   justify-content: space-evenly;
   padding: 1.5rem;
+  align-items: center;
 }
 
 .contact-methods span{
@@ -211,4 +212,18 @@ li:hover{
 .google-map span{
   font-size: 30px;
   text-decoration: underline;
+}
+
+.footer-divider{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer{
+  background-color: rgb(26, 26, 26);
+  color: aliceblue;
+  text-align: center;
+  padding: 1.5rem;
 }
