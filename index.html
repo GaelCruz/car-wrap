@@ -11,7 +11,7 @@
 </head>
 <body>
   <nav>
-    <h1 class="logo">Logo</h1>
+    <img class="logo" src="./assets/car-logo-filler.png" width="100px" alt="">
     <ul class="page-links">
       <li>Home</li>
       <li>About us</li>
@@ -20,9 +20,28 @@
   </nav>
   <div class="car-wrap"></div>
   <div class="shade">
-    <div>
-      <h1>Company Title</h1>
-      <p>Automotive Customization Specialist</p>
+    <div class="front-page-content">
+      <div>
+        <h1>Company Title</h1>
+        <p>Automotive Customization Specialist</p>
+      </div>
+      
+      <div>
+        <!-- facebook icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
+          <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
+        </svg>
+        
+        <!-- instagram icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
+        <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+        </svg>
+
+        <!-- X icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
+          <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+        </svg>
+      </div>
     </div>
   </div>
 
@@ -91,26 +110,49 @@
   <section class="contact-wrapper">
     <form class="contact-section">
       <h1>Contact us.</h1>
-      <input type="text" placeholder="First Name">
-      <input type="text" placeholder="Last Name">
-      <input type="text" placeholder="Phone Number">
-      <input type="text" placeholder="Email">
+      <input type="text" required placeholder="First Name">
+      <input type="text" required placeholder="Last Name">
+      <input type="text" required placeholder="Phone Number">
+      <input type="text" required placeholder="Email">
       <textarea placeholder="How can we help?" name="" id="" cols="30" rows="10"></textarea>
+      <button>Submit</button>
     </form>
   </section>
 
 
   <section class="footer-wrapper">
     <div class="contact-methods">
+      <span>Contact</span>
       <p>email@gmail.com</p>
       <p>555-555-5555</p>
-      <p></p>
+
+      <!-- facebook icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
+        <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"></path>
+      </svg>
+      
+      <!-- instagram icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 24 24">
+      <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"></path>
+      </svg>
+
+      <!-- X icon -->
+      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 30 30">
+        <path d="M26.37,26l-8.795-12.822l0.015,0.012L25.52,4h-2.65l-6.46,7.48L11.28,4H4.33l8.211,11.971L12.54,15.97L3.88,26h2.65 l7.182-8.322L19.42,26H26.37z M10.23,6l12.34,18h-2.1L8.12,6H10.23z"></path>
+      </svg>
+
+
     </div>
     <div class="google-map">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27728.364743447182!2d-95.61430876044919!3d29.68945780000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dd73c582d049%3A0x55e11eb0d970f31d!2sDomino&#39;s%20Pizza!5e0!3m2!1sen!2sus!4v1710988414869!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <span>Location</span>
+      <p>12318 Beechnut Rd, Houston, TX 77072</p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27728.364743447182!2d-95.61430876044919!3d29.68945780000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640dd73c582d049%3A0x55e11eb0d970f31d!2sDomino&#39;s%20Pizza!5e0!3m2!1sen!2sus!4v1710988414869!5m2!1sen!2sus" width="450" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 </body>
+
+
+
 <style>
   body{
     font-family: 'Poppins';
