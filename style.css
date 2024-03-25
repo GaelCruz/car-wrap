@@ -4,12 +4,25 @@
   border: none;
 }
 
+.nav-wrapper{
+  background-color: rgb(31,31,31);
+  display: flex;
+  justify-content: center;
+}
+
 nav{
-  padding: 2.3rem;
+  padding: 1rem;
   display: flex;
   gap: 30px;
   background-color: rgb(31, 31, 31);
   color: white;
+  width: 1300px;
+}
+
+nav button{
+  padding: 12px;
+  border-radius: 20px;
+  background-color: rgb(65, 122, 245);
 }
 
 .page-links{
@@ -34,7 +47,7 @@ li:hover{
   width: 100%;
   height: 70vh;
   position: absolute;
-  top: 100px;
+  top: 120px;
 }
 
 .car-wrap {
@@ -44,6 +57,15 @@ li:hover{
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+}
+
+#call-about-section{
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#call-number-about-section{
+  color: rgb(65, 122, 245);
 }
 
 .shade div {
