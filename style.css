@@ -98,6 +98,7 @@ li:hover{
 
 .service-action{
   width: 1300px;
+  position: relative;
 }
 
 .service-option-wrapper-1{
@@ -108,65 +109,86 @@ li:hover{
   margin-top: 1.6rem;
 }
 
-#service-2{
-  background-color: rgba(255, 255, 255, 0.144);
+.service-title{
+  font-size: 20px;
+  position: absolute;
+  left: 25px;
+  bottom: 20px;
+}
+
+.card{
+  width: 380px;
+  height: 500px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.card-container{
+  width: 100%;
+  display: flex;
+}
+
+.card-wrapper{
+  display: flex;
   justify-content: space-evenly;
-  backdrop-filter: blur(5px);
+  overflow-x: hidden;
+}
+
+.pointer{
+  background-color: rgba(240, 248, 255, 0.658);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.pointer:hover{
+  background-color: rgba(255, 255, 255, 0.808);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+}
+
+#right-arrow{
+  position: absolute;
+  right: -100px;
+  bottom: 35%;
+}
+.right-arrow{
+  position: absolute;
+  top: 35%;
+  right: 35%;
+}
+
+#left-arrow{
+  position: absolute;
+  left: -100px;
+  bottom: 35%;
+}
+.left-arrow{
+  position: absolute;
+  top: 35%;
+  right: 35%;
+}
+
+#service-1{
+  background-image: url(./assets/car-wrap-labor.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+#service-2{
+  background-image: url(./assets/detailing.jpeg );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #service-3{
-  background-color: rgba(255, 255, 255, 0.144);
-  justify-content: space-evenly;
-  backdrop-filter: blur(5px);
-}
-
-.image-service-1{
-  background-image: url(./assets/car-wrap-labor.jpg);
+  background-image: url(./assets/car-wrap.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 550px;
-  height: 300px;
-  background-position-y: -50px;
-  border-radius: 15px;
-}
-
-.image-service-2{
-  background-image: url(./assets/detailing.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 550px;
-  height: 300px;
-  background-position-y: -50px;
-  border-radius: 15px;
-}
-
-.image-service-3{
-  background-image: url(./assets/car-wrap-labor.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 550px;
-  height: 300px;
-  background-position-y: -50px;
-  border-radius: 15px;
-}
-
-.service-option-1{
-  display: flex;
-  justify-content: space-evenly;
-  align-items:center ;
-}
-
-.service-title{
-  font-size: 60px;
-}
-
-.service-text{
-  width: 650px;
-}
-
-.service-option span{
-  font-size: 40px;
-  text-decoration: underline;
 }
 
 .our-work-section{
@@ -241,6 +263,14 @@ li:hover{
   width:700px;
 }
 
+.contact-container{
+  background-image: url(./assets/car-pics/car1.jpg);
+  background-position-y: -150px;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-attachment:local;
+}
+
 .contact-wrapper{
   display: flex;
   justify-content: center;
@@ -251,9 +281,10 @@ li:hover{
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  background-color: rgb(26, 26, 26);
+  background-color: rgba(227, 227, 227, 0.269);
   color: aliceblue;
-  border-radius: 15px;
+  border-radius: 5px;
+  backdrop-filter: blur(10px);
 }
 
 .contact-section h1{
@@ -266,13 +297,14 @@ li:hover{
 .contact-section input{
   margin-bottom: 1rem;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .contact-section textarea{
-  border-radius: 10px;
-  width: 400px;
+  border-radius: 5px;
+  width: 600px;
   height: 150px;
+  resize: none;
 }
 
 .contact-section button{
@@ -294,6 +326,27 @@ li:hover{
 .contact-methods span{
   font-size: 30px;
   text-decoration: underline;
+}
+
+.contact-container{
+  display: flex;
+  justify-content: center;
+}
+
+.contact-options{
+  width: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1.5rem;
+  /* background-color: blue; */
+  padding: 0.5rem;
+}
+
+.contact-option{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: red;
 }
 
 .front-page-content{
