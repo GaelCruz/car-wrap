@@ -8,6 +8,7 @@
   background-color: rgb(31,31,31);
   display: flex;
   justify-content: center;
+  position: sticky;
 }
 
 nav{
@@ -123,14 +124,22 @@ li:hover{
   position: relative;
 }
 
+.card:hover{
+  width: 380px;
+  height: 500px;
+  border-radius: 5px;
+  position: relative;
+}
+
+
 .card-container{
-  width: 100%;
   display: flex;
+  gap: 80px;
 }
 
 .card-wrapper{
+  width: 1300px;
   display: flex;
-  justify-content: space-evenly;
   overflow-x: hidden;
 }
 
