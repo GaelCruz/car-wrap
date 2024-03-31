@@ -4,11 +4,15 @@ const serviceInfo = document.querySelector('.card-info');
 const rightArrow = document.querySelector('#right-arrow');
 const leftArrow = document.querySelector('#left-arrow');
 
-function serviceBlur(){
-  // service.style.filter = 'blur(10px)';
-  console.log('1')
-};
+// function serviceBlurHoverOn(){
+//   service.style.filter = 'blur(5px)';
+// };
 
-service.addEventListener('click', serviceBlur);
+// function serviceBlurHoverOff(){
+//   service.style.filter = 'blur(0px)';
 
-rightArrow.addEventListener('click', serviceBlur)
+// }
+
+// service.addEventListener('mouseover', serviceBlurHoverOn)
+// service.addEventListener('mouseleave', serviceBlurHoverOff)
+
