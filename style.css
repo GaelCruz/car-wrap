@@ -14,6 +14,7 @@
 nav{
   padding: 1rem;
   display: flex;
+  justify-content: space-between;
   gap: 30px;
   background-color: rgb(31, 31, 31);
   color: white;
