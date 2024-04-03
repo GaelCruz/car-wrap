@@ -87,9 +87,9 @@ li:hover{
   color: white;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-image: url(./assets/black-texture.jpg);
+  background-image: url(./assets/Houston-4.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   display: flex;
   justify-content: center;
 }
@@ -107,7 +107,7 @@ li:hover{
 
 .service-option-wrapper-1{
   padding: 1.8rem;
-  background-color: rgba(255, 255, 255, 0.144);
+  background-color: rgba(77, 77, 77, 0.144);
   backdrop-filter: blur(5px);
   border-radius: 10px;
   margin-top: 1.6rem;
@@ -120,8 +120,8 @@ li:hover{
   bottom: 20px;
   padding: 5px 10px 5px 10px;
   border-radius: 3px;
-  color: black;
-  background-color: rgba(251, 251, 251, 0.646);
+  color: aliceblue;
+  background-color: rgba(46, 46, 46, 0.646);
 }
 
 .card{
@@ -146,6 +146,7 @@ li:hover{
   width: 100%;
   height: 100%;
   filter: blur(0px);
+  box-shadow: 10px 10px 30px rgb(0, 0, 0);
   transition: filter 0.3 ease;
   border-radius: 10px;
 }
@@ -153,12 +154,45 @@ li:hover{
 .card-info{
   position: absolute;
   top: -200px;
-  color: black;
+  color: aliceblue;
   margin: 10px;
-  background-color: rgba(251, 251, 251, 0.646);
+  background-color: rgba(46, 46, 46, 0.646);
   border-radius: 8px;
   /* z-index: 1; */
   padding: 10px;
+}
+
+.info-call-btn{
+  padding: 8px;
+  border-radius: 3px;
+  background-color: rgb(239, 240, 241);
+  transition: 0.3s ease-out;
+}
+
+.info-call-btn:hover{
+  padding: 8px;
+  border-radius: 3px;
+  color: aliceblue;
+  background-color: rgb(65, 122, 245);
+  transition: 0.3s ease-in-out;
+}
+
+.info-contact-btn{
+  padding: 8px;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0);
+  color: aliceblue;
+  border: 0.1px solid aliceblue;
+  transition: 0.3s ease-out;
+}
+
+.info-contact-btn:hover{
+  padding: 8px;
+  border-radius: 3px;
+  background-color: rgb(65, 122, 245);
+  border: 0.1px solid rgb(65, 122, 245);
+  color: aliceblue;
+  transition: 0.3 ease-in-out;
 }
 
 .card:hover .card-info{
@@ -167,7 +201,7 @@ li:hover{
 }
 
 .card:not(:hover) .card-info{
-  top: -200px;
+  top: -300px;
   transition: 0.3s;
 }
 
