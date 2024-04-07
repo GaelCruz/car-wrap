@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbgpfTgDCm3GOLwxZHIq8jdcyJGHAQKPc&libraries=places"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -229,6 +230,9 @@
     </div>
   </div>
 
+  <div class="taggbox"  style="width:100%;height:100%" data-widget-id="153053" data-tags="false" ></div><script src="https://widget.taggbox.com/embed-lite.min.js" type="text/javascript"></script>
+
+
 
   <div class="pic-divider"></div>
   <section class="contact-container">
@@ -246,7 +250,6 @@
       </form>
     </div>
   </section>
-
 
   <section class="footer-wrapper">
     <!-- <img src="./assets/car-logo-filler.png" width="300" height="80" alt=""> -->
@@ -287,6 +290,10 @@
   <footer>
     <p> &copy; 2024 Compnay Name | Website Design by NetWire Marketing</p>
   </footer>
+
+
+  <h1>Google Reviews</h1>
+  <div id="reviews-container"></div>
 </body>
 
 
@@ -306,6 +313,68 @@
     font-family: 'Poppins';
   }
 </style>
+
+<script>
+  // Replace 'YOUR_API_KEY' with your actual API key
+  const apiKey = 'AIzaSyDbgpfTgDCm3GOLwxZHIq8jdcyJGHAQKPc';
+  const placeId = 'ChIJ6-LsbjvdQIYRTSB_RSY0oQI'; // Replace 'PLACE_ID' with the desired place ID
+
+  function initMap() {
+      const service = new google.maps.places.PlacesService(document.createElement('div'));
+      service.getDetails({
+          placeId: placeId,
+          fields: ['name', 'reviews']
+      }, (place, status) => {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+              const reviewsContainer = document.getElementById('reviews-container');
+              const reviews = place.reviews;
+              if (reviews && reviews.length > 0) {
+
+                  reviews.forEach(review => {
+                      const reviewDiv = document.createElement('div');
+                      reviewDiv.innerHTML = `
+                          <div>
+                            ${review.photoUri ? `<img src="${review.photoUri}" alt="Review photo">` : ''}
+                            <p>${review.rating}</p>
+                            <p><strong>${review.author_name}</strong></p>
+                            <p>${review.text}</p>
+                          </div>
+                      `;
+                      reviewsContainer.appendChild(reviewDiv);
+                      reviewsContainer.style.display = 'flex';
+                      reviewsContainer.style.justifyContent = 'evenly-space';
+                      reviewsContainer.style.gap = '10px'
+                      reviewsContainer.style.margin = '1.5rem'
+
+                      reviewDiv.style.backgroundColor = "white"
+                      reviewDiv.style.borderRadius = "15px"
+                      reviewDiv.style.boxShadow = "0px 0px 10px #f0f0f0"
+                      reviewDiv.style.padding = "1rem"
+
+                  });
+              } else {
+                  reviewsContainer.innerHTML = '<p>No reviews found.</p>';
+              }
+          }
+      });
+  }
+
+  function getStarRating(rating) {
+    const roundedRating = Math.round(rating);
+    let stars = '';
+    for (let i = 0; i < 5; i++) {
+        if (i < roundedRating) {
+            stars += '★'; // Full star
+        } else {
+            stars += '☆'; // Empty star
+        }
+    }
+    return stars;
+}
+
+  // Load the map
+  initMap();
+</script>
 
 <script src="index.js"></script>
 </html>
