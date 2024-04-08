@@ -340,9 +340,10 @@
                     }
                       reviewDiv.innerHTML = `
                           <div>
-                            <p>${review.rating}</p>
+                            <p>${getStarRating(review.rating)}</p>
                             <p><strong>${review.author_name}</strong></p>
                             <p>${review.text}</p>
+                            <p>${review.relativePublishTimeDescription}</p>
                           </div>
                       `;
                       reviewsContainer.appendChild(reviewDiv);
