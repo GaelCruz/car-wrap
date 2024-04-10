@@ -1,8 +1,18 @@
-const service = document.querySelector(".card");
-const serviceImage = document.querySelector('.card-image');
-const serviceInfo = document.querySelector('.card-info');
-const rightArrow = document.querySelector('#right-arrow');
-const leftArrow = document.querySelector('#left-arrow');
+const express = require('express');
+const dotenv = require('dotenv');
+const app = express();
 
+dotenv.config();
+
+app.get('/', (req, res) => {
+  res.render('index', {
+    apiKey: process.env.API_KEY,
+    placeId: process.env.PLACE_ID
+  });
+});
+
+app.listen(3000, () => {
+  console.log('Server listening on port 3000');
+});
 
 
