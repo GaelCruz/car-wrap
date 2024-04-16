@@ -317,7 +317,7 @@
   // Replace 'YOUR_API_KEY' with your actual API key
 
   const apiKey = '{{apiKey}}'; 
-  const placeId = 'ChIJ6-LsbjvdQIYRTSB_RSY0oQI';
+  const placeId = 'ChIJA0fKZibdQIYRCKr2ANhhokU';
 
   function initMap() {
       const service = new google.maps.places.PlacesService(document.createElement('div'));
@@ -339,14 +339,18 @@
                         reviewDiv.appendChild(img); // Append the image to the review div
                     }
                       reviewDiv.innerHTML = `
-                          <div style="width: 100%; height: 320px; overflow-y: scroll">                          
+                          <div style="width: 290px; height: 320px; overflow-y: scroll">  
+                            <a href"${review.author_url}">
+                              <img src="${review.profile_photo_url}" width="50px" ></img>
+                            </a>                        
                             <p style="text-size: 10px">${getStarRating(review.rating)}</p>
                             <div style="display: flex; align-items: center;">
                               <p style="color: grey;">@${review.author_name}</p>
                               <img src="./assets/google-logo.png" style="width: 50px"></img>
                             </div>
                             <p>${review.text}</p>
-                            <p>${review.relativePublishTimeDescription}</p>
+                            <br>
+                            <p style="color: grey;">${review.relative_time_description}</p>
                           </div>
                       `;
                       reviewsContainer.appendChild(reviewDiv);
@@ -356,6 +360,7 @@
                       reviewsContainer.style.justifyContent = 'evenly-space';
                       reviewsContainer.style.gap = '10px'
                       reviewsContainer.style.margin = '1.5rem'
+                      reviewsContainer.style.overflowX = 'scroll'
 
                       reviewDiv.style.backgroundColor = "white"
                       reviewDiv.style.borderRadius = "15px"
