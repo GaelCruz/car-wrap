@@ -368,7 +368,7 @@ li:hover{
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url(./assets/pic-div.jpg);
+  background-image: url(./assets/car-pics/car4.jpg);
   background-position-y: -200px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -397,8 +397,8 @@ li:hover{
 .about-us-section{
   width: 1300px;
   padding: 1.5rem;
+  color: rgb(237, 213, 24);
 }
-
 .about-section{
   display: flex;
   justify-content: space-evenly;

@@ -234,7 +234,7 @@
     <!-- <p class="google-review-title">Google Reviews</p> -->
     <div style="width: 1200px; display: flex; justify-content: center;">
       <div style="overflow-x: hidden;">
-        <div style="display: flex; justify-content:center;">
+        <div style="display: flex; justify-content:center; margin-top: 20px;">
           <img src="./assets/Google-Reviews-Icon.png" width="200px" alt="">
         </div>
         <div id="reviews-container"></div> 
@@ -367,7 +367,7 @@
                       reviewsContainer.style.overflowX = 'scroll'
                       
 
-                      reviewDiv.style.backgroundColor = "white"
+                      reviewDiv.style.backgroundColor = "rgba(248,248,248,.9)"
                       reviewDiv.style.borderRadius = "15px"
                       reviewDiv.style.boxShadow = "0px 0px 10px #E8E8E8"
                       reviewDiv.style.padding = "1rem"
@@ -390,7 +390,7 @@
               stars += '☆'; // Empty star
           }
       }
-      return '<span style="color: #FF9529; font-size: 30px;">' + stars + '</span>';
+      return '<span style="color:rgb(237, 213, 24); font-size: 20px;">' + stars + '</span>';
   }
 
   // Load the map
