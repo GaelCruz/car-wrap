@@ -52,7 +52,7 @@ li:hover{
   width: 100%;
   height: 70vh;
   position: absolute;
-  top: 120px;
+  top: 110px;
 }
 
 .car-wrap {
@@ -115,7 +115,7 @@ li:hover{
 }
 
 .service-title{
-  font-size: 20px;
+  font-size: 13px;
   position: absolute;
   left: 25px;
   bottom: 20px;
@@ -126,12 +126,17 @@ li:hover{
 }
 
 .card{
-  width: 245px;
-  height: 380px;
+  width: 270px;
+  height: 360px;
   /* border-radius: 5px; */
   position: relative;
   /* z-index: 2; */
   transition: 0.1s ease-out;
+}
+
+.card-container{
+  display: flex;
+  gap: 20px;
 }
 
 .card:hover .card-image{
@@ -204,11 +209,6 @@ li:hover{
 .card:not(:hover) .card-info{
   top: -300px;
   transition: 0.3s;
-}
-
-.card-container{
-  display: flex;
-  gap: 60px;
 }
 
 .card-wrapper{
@@ -397,7 +397,6 @@ li:hover{
 .about-us-section{
   width: 1300px;
   padding: 1.5rem;
-  color: rgb(237, 213, 24);
 }
 .about-section{
   display: flex;
