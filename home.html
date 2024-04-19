@@ -80,7 +80,7 @@
     <div class="service-action">
       <h1>OUR SERVICES</h1>
       <div class="card-wrapper">
-        <div class="card-container">
+        <div class="card-container" id="service-container">
 
           <div class="card">
             <div class="card-image" id="service-1"></div>
@@ -179,35 +179,6 @@
           <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"/></svg>
         </div>
       </div>
-      <!-- <div class="service-option-wrapper-1">
-        <div class="service-option-1">
-          <div>
-            <span class="service-title">VEHICLE WRAPS</span>
-            <p class="service-text">Revamp your ride with our top-quality wraps. Over 100 colors and six finishes to choose from, including matte, satin, gloss, carbon fiber, brushed metal, and chrome. Options range from full color changes to accent wraps and chrome deletes.</p>
-          </div>
-          
-          <div class="image-service-1"></div>
-        </div>
-      </div>
-      <div class="service-option-wrapper-1" id="service-2">
-        <div class="service-option-1">
-          <div class="image-service-2"></div>
-          <div>
-            <span class="service-title">PAINT CORRECTION <br> AND DETAIL</span>
-            <p class="service-text">Paint correction rejuvenates vehicle paint by removing imperfections like swirl marks, scratches, and etching. It's labor-intensive, involving machine polishers and various products. The result: a brilliantly shining paint with no visible blemishes, only true reflections.</p>
-          </div>
-        </div>
-      </div>
-      <div class="service-option-wrapper-1" id="service-3">
-        <div class="service-option-1">
-          <div>
-            <span class="service-title">CERAMIC COATING</span>
-            <p class="service-text">Ceramic Coating is a liquid polymer applied to a vehicle's exterior by hand, bonding with the factory paint to provide protection and a like-new appearance with minimal upkeep. It shields against UV rays, repels water, and prevents contaminants from adhering to the paint, making cleaning easier. The coating enhances gloss and clarity, adding value to the vehicle.</p>
-          </div>
-          
-          <div class="image-service-2"></div>
-        </div>
-      </div> -->
     </div>
   </div>
 
@@ -322,7 +293,7 @@
   // Replace 'YOUR_API_KEY' with your actual API key
 
   const apiKey = '{{apiKey}}'; 
-  const placeId = 'ChIJR9G368jAQIYRTbRYNvZN_MU';
+  const placeId = 'ChIJQ6K3vgymEmsRzGKNTyUdKWY';
 
   function initMap() {
       const service = new google.maps.places.PlacesService(document.createElement('div'));
@@ -344,10 +315,10 @@
                         reviewDiv.appendChild(img); // Append the image to the review div
                     }
                       reviewDiv.innerHTML = `
-                          <div style="width: 290px; height: 320px; overflow-y: scroll">  
-                            <a href"${review.author_url}">
+                          <div style="width: 290px; height: 320px; overflow-y: scroll"> 
+                            <a href="${review.profile_photo_url}"> 
                               <img src="${review.profile_photo_url}" width="50px" ></img>
-                            </a>                        
+                            </a>                       
                             <p style="text-size: 5px">${getStarRating(review.rating)}</p>
                             <div style="display: flex; align-items: center;">
                               <p style="color: grey;">@${review.author_name}</p>
@@ -355,6 +326,7 @@
                             </div>
                             <p>${review.text}</p>
                             <br>
+                            <a href="${review.author_url}">View in Google Reviews</a>
                             <p style="color: grey;">${review.relative_time_description}</p>
                           </div>
                       `;
@@ -399,4 +371,5 @@
 </script>
 
 <script src="index.js"></script>
+<script src="home.js"></script>
 </html>
