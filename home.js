@@ -3,6 +3,11 @@ const rightArrow = document.querySelector("#right-arrow")
 const leftArrow = document.querySelector("#left-arrow")
 
 
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////
+///////////////////         Carousel Logic         //////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
 const serviceCardWidth = 290
 const maxCarouselRightClicks = 3
 let carouselClicks = 0
@@ -17,8 +22,12 @@ const checkClickCount = () => {
       break;
     case carouselClicks === 1:
       leftArrow.style.display = 'block';
+      rightArrow.style.display = 'block';
       break;
-    case carouselClicks > 2:
+    case carouselClicks === 2:
+      rightArrow.style.display = 'block';
+      break;
+    case carouselClicks == 3:
       rightArrow.style.display = 'none';
       // console.log("this is the max");
       break;
@@ -30,9 +39,6 @@ const leftArrowCLickConditions = () => {
     carouselClicks--
   } 
 }
-
-
-
 
 
 const leftArrowClick = () => {
