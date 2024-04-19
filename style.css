@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+  width: 4px; /* Width of the scrollbar */
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff00; /* Color of the scrollbar track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888888ab; /* Color of the scrollbar thumb */
+  border-radius: 5px; /* Border radius of the scrollbar thumb */
+}
+
+
 *{
   padding: 0px;
   margin: 0px;
@@ -376,6 +391,7 @@ li:hover{
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  padding-bottom: 1rem;
 }
 
 .about-us-wrapper{
@@ -410,6 +426,7 @@ li:hover{
 .about-picture{
   width:700px;
 }
+
 
 .contact-container{
   background-image: url(./assets/car-pics/car1.jpg);
@@ -526,4 +543,46 @@ footer{
   color: aliceblue;
   text-align: center;
   padding: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 1300px){
+  .reviews-container{
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 850px){
+  .reviews-container{
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 780px){
+  .service-action{
+    width: 290px;
+  }
+
+  .card-wrapper{
+    width: 290px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .service-action{
+    width: 290px;
+  }
+
+  .card-wrapper{
+    width: 290px;
+  }
+
+  .reviews-container{
+    width: 270px;
+  }
+
+  .service-action{
+    width: 700px;
+  }
 }
