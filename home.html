@@ -78,7 +78,7 @@
 
   <div class="services">
     <div class="service-action">
-      <h1>OUR SERVICES</h1>
+      <h1 class="service-section-title">OUR SERVICES</h1>
       <div class="card-wrapper">
         <div class="card-container" id="service-container">
 
@@ -293,7 +293,7 @@
   // Replace 'YOUR_API_KEY' with your actual API key
 
   const apiKey = '{{apiKey}}'; 
-  const placeId = 'ChIJR9G368jAQIYRTbRYNvZN_MU';
+  const placeId = 'ChIJcereHyfCQIYRBzAqaw27ec4';
 
   function initMap() {
       const service = new google.maps.places.PlacesService(document.createElement('div'));
@@ -324,7 +324,7 @@
                               <p style="color: grey;">@${review.author_name}</p>
                               <img src="./assets/google-logo.png" style="width: 50px"></img>
                             </div>
-                            <p>${review.text}</p>
+                            <p class="review-text">${review.text}</p>
                             <br>
                             <a href="${review.author_url}">View in Google Reviews</a>
                             <p style="color: grey;">${review.relative_time_description}</p>
@@ -332,7 +332,7 @@
                       `;
                       reviewsContainer.appendChild(reviewDiv);
                       reviewsContainer.style.margin = '0px'
-                      reviewsContainer.style.padding = '40px'
+                      reviewsContainer.style.padding = '5px 0px 10px 0px'
                       reviewsContainer.style.display = 'flex';
                       reviewsContainer.style.justifyContent = 'evenly-space';
                       reviewsContainer.style.gap = '10px'
@@ -344,6 +344,7 @@
                       reviewDiv.style.borderRadius = "15px"
                       reviewDiv.style.boxShadow = "0px 0px 10px #E8E8E8"
                       reviewDiv.style.padding = "1rem"
+                      reviewDiv.className = "review-div"
                       
 
                   });

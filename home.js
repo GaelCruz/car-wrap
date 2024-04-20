@@ -1,9 +1,27 @@
 const serviceContainer = document.getElementById("service-container")
 const rightArrow = document.querySelector("#right-arrow")
 const leftArrow = document.querySelector("#left-arrow")
+const arrowPointer = document.querySelector(".pointer")
+const body = document.querySelector('body')
+const cardWrapper = document.querySelector('.card-wrapper')
 
 
+const screenWidth = window.innerWidth
 
+const breakpoint = 850
+
+
+function updateStyles() {
+  if (screenWidth <= breakpoint) {
+    rightArrow.style.display = 'none';
+    leftArrow.style.display = 'none';
+    cardWrapper.style.overflowX = 'scroll'
+    cardWrapper.stylescrollBehavior = 'smooth'
+  } else {
+    rightArrow.style.display = 'block';
+    leftArrow.style.display = 'block';
+  }
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////         Carousel Logic         //////////////////////////////////////////
@@ -60,7 +78,8 @@ const rightArrowClick = () => {
 }
 
 
-
+updateStyles();
+window.addEventListener('resize', updateStyles);
 
 checkClickCount()
 rightArrow.addEventListener("click", rightArrowClick)

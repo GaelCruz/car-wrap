@@ -63,7 +63,7 @@ li:hover{
 }
 
 .shade {
-  background-color: rgba(0, 0, 0, 0.212);
+  background-color: rgba(0, 0, 0, 0);
   width: 100%;
   height: 70vh;
   position: absolute;
@@ -551,11 +551,37 @@ footer{
   .reviews-container{
     width: 700px;
   }
+
+  .about-picture{
+    width: 500px;
+  }
+
+  .contact-options{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 850px){
   .reviews-container{
     width: 500px;
+  }
+  .about-picture{
+    display: none;
+  }
+
+  .contact-container{
+    background-position: 0px;
+  }
+
+  .footer-divider{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+  }
+
+  .contact-section textarea{
+    width: 300px;
+    height: 10px;
   }
 }
 
@@ -567,11 +593,25 @@ footer{
   .card-wrapper{
     width: 290px;
   }
-}
 
+}
 @media screen and (max-width: 550px){
+  .services h1{
+    font-size: 35px
+  }
+
+  .review-text{
+    width: 220px;
+    overflow-wrap: normal;
+  }
+
+  .review-div{
+    width: 220px;
+    font-size: 10px;
+    margin:0px 10px 0px 10px;
+  }
   .service-action{
-    width: 290px;
+    width: 280px;
   }
 
   .card-wrapper{
@@ -580,9 +620,5 @@ footer{
 
   .reviews-container{
     width: 270px;
-  }
-
-  .service-action{
-    width: 700px;
   }
 }
