@@ -62,22 +62,46 @@ li:hover{
   color: rgb(0, 183, 255);
 }
 
-.shade {
-  background-color: rgba(0, 0, 0, 0);
-  width: 100%;
-  height: 70vh;
-  position: absolute;
-  top: 110px;
-}
-
 .car-wrap {
   position: relative;
   height: 70vh;
-  background-image: url(./assets/car-wrap.jpg);
+  background-image: url(./assets/car-pics/car10.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  /* background-position-x: -250px; */
+  background-position-y: -250px;
 }
+
+.shade {
+  background-color: rgba(255, 255, 255, 0.308);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.front-page-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 90%;
+}
+
+.call-btn{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: rgb(31,31,31);
+  gap: 8px;
+
+}
+
+.call-btn-top-section{
+  display: flex;
+  justify-content: center;
+}
+
 
 #call-about-section{
   font-weight: 800;
@@ -514,12 +538,6 @@ li:hover{
   background-color: red;
 }
 
-.front-page-content{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 90%;
-}
 
 .google-map{
   display: flex;
@@ -590,9 +608,17 @@ footer{
     width: 290px;
   }
 
+  .car-wrap{
+    height: 50vh;
+    background-position-x: -400px;
+    background-position-y: -300px;
+  }
+
   .card-wrapper{
     width: 290px;
   }
+
+  
 
 }
 @media screen and (max-width: 550px){
@@ -620,5 +646,13 @@ footer{
 
   .reviews-container{
     width: 270px;
+  }
+
+  .footer-wrapper{
+    justify-content: flex-start;
+  }
+
+  .footer-logo{
+    width: 200px;
   }
 }
