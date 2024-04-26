@@ -6,10 +6,11 @@ const body = document.querySelector('body')
 const cardWrapper = document.querySelector('.card-wrapper')
 
 
-const screenWidth = window.innerWidth
+let screenWidth = window.innerWidth
 
 const breakpoint = 850
 
+let condition = true
 
 function updateStyles() {
   if (screenWidth <= breakpoint) {
@@ -18,6 +19,7 @@ function updateStyles() {
     cardWrapper.style.overflowX = 'scroll'
     cardWrapper.stylescrollBehavior = 'smooth'
   } else {
+    checkClickCount()
     rightArrow.style.display = 'block';
     leftArrow.style.display = 'block';
   }
@@ -81,7 +83,6 @@ const rightArrowClick = () => {
 updateStyles();
 window.addEventListener('resize', updateStyles);
 
-checkClickCount()
 rightArrow.addEventListener("click", rightArrowClick)
 leftArrow.addEventListener("click", leftArrowClick)
 
