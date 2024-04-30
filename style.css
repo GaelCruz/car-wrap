@@ -23,7 +23,6 @@
   background-color: rgb(31,31,31);
   display: flex;
   justify-content: center;
-  position: sticky;
 }
 
 nav{
@@ -35,6 +34,47 @@ nav{
   background-color: rgb(31, 31, 31);
   color: white;
   width: 1300px;
+}
+
+.mobile-nav{
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  background-color: rgba(18, 18, 18, 0.589);
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-nav-links{
+  height: 100%;
+  filter: blur(10pxs);
+  font-weight: 700;
+}
+
+.mobile-nav-links ul{
+  font-size: 40px;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+#nav-x-btn{
+  font-size: 60px;
+  width: 100%;
+  padding: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#nav-x-btn div{
+  background-color: rgba(255, 255, 255, 0.36);
+  padding: 0px 30px 0px 30px;
 }
 
 .ham-btn{
@@ -58,14 +98,14 @@ nav button{
   cursor: pointer;
 }
 
-li{
+.page-links li{
   font-size: x-large;
   padding: 10px;
   transition: .3s;
   border-radius: 5px;
 }
 
-li:hover{
+.page-links li:hover{
   display: flex;
   align-items: center;
   gap: 20px;
@@ -584,7 +624,7 @@ footer{
 
 @media screen and (max-width: 1300px){
   .reviews-container{
-    width: 700px;
+    width: 900px;
   }
 
   .about-picture{
@@ -629,7 +669,7 @@ footer{
   .car-wrap{
     height: 50vh;
     background-position-x: -400px;
-    background-position-y: -300px;
+    background-position-y: -100px;
   }
 
   .card-wrapper{
@@ -655,7 +695,21 @@ footer{
   
 
 }
+
 @media screen and (max-width: 550px){
+
+  .gallery-wall{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 10px;
+  }
+
+  .our-work-img{
+    width: 100%;
+  }
+
   .services h1{
     font-size: 35px
   }
@@ -684,11 +738,12 @@ footer{
     margin:0px 10px 0px 10px;
   }
   .service-action{
-    width: 280px;
+    width: 100%;
   }
 
   .card-wrapper{
-    width: 290px;
+    padding: 15px;
+    width: 340px;
   }
 
   .reviews-container{

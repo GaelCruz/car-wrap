@@ -4,6 +4,10 @@ const leftArrow = document.querySelector("#left-arrow")
 const arrowPointer = document.querySelector(".pointer")
 const body = document.querySelector('body')
 const cardWrapper = document.querySelector('.card-wrapper')
+const hamBtn = document.getElementById('ham-btn')
+const hamBtnBar1 = document.getElementById('ham-btn-1')
+const hamBtnBar2 = document.getElementById('ham-btn-2')
+const hamBtnBar3 = document.getElementById('ham-btn-3')
 
 
 let screenWidth = window.innerWidth

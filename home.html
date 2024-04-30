@@ -11,6 +11,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="mobile-nav">
+    <div class="mobile-nav-links">
+      <ul>
+        <li>HOME</li>
+        <li>GALLERY</li>
+        <li>CONTACT US</li>
+        <button id="nav-x-btn">
+          <div>
+            &times;
+          </div>
+        </button>
+      </ul>
+    </div>
+  </div> 
   <section class="nav-wrapper">
     <nav>
       <img class="logo" src="./assets/vehicle wrap.png" width="100px" alt="">
@@ -19,14 +33,13 @@
         <li>Gallery</li>
         <li>Contact us</li> 
       </ul>
-      <div class="ham-btn">
-        <div class="ham-btn-line"></div>
-        <div class="ham-btn-line"></div>
-        <div class="ham-btn-line"></div>
+      <div class="ham-btn" id="ham-btn">
+        <div class="ham-btn-line" id="ham-btn-1"></div>
+        <div class="ham-btn-line" id="ham-btn-2"></div>
+        <div class="ham-btn-line" id="ham-btn-3"></div>
       </div>
     </nav>
   </section>
-  
   <div class="car-wrap">
     <div class="shade">
       <div class="front-page-content">
@@ -196,15 +209,15 @@
       <p>A collection of cars we've renovated with passion</p>
 
       <div class="gallery-wall">
-        <img src="./assets/car-pics/car1.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car2.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car3.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car4.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car5.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car6.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car7.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car8.jpg" alt="" width="30%">
-        <img src="./assets/car-pics/car9.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car1.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car2.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car3.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car4.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car5.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car6.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car7.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car8.jpg" alt="" width="30%">
+        <img class="our-work-img" src="./assets/car-pics/car9.jpg" alt="" width="30%">
       </div>
     </div>
   </div>
@@ -299,7 +312,6 @@
 
 <script>
   // Replace 'YOUR_API_KEY' with your actual API key
-
   const apiKey = '{{apiKey}}'; 
   const placeId = 'ChIJcereHyfCQIYRBzAqaw27ec4';
 
@@ -323,7 +335,7 @@
                         reviewDiv.appendChild(img); // Append the image to the review div
                     }
                       reviewDiv.innerHTML = `
-                          <div style="width: 290px; height: 320px; overflow-y: scroll"> 
+                          <div style="width: 280px; height: 320px; overflow-y: scroll"> 
                             <a href="${review.profile_photo_url}"> 
                               <img src="${review.profile_photo_url}" width="50px" ></img>
                             </a>                       
