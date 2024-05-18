@@ -37,15 +37,20 @@ nav{
 }
 
 .mobile-nav{
-  height: 100%;
-  position: absolute;
-  top: 0px;
-  background-color: rgba(18, 18, 18, 0.589);
+  display: none;
+}
+
+.active{
+  top: 0;
+  height: 100vh;
+  position: fixed;
+  background-color: rgb(37, 37, 37);
   z-index: 3;
   width: 100%;
   display: flex;
   justify-content: center;
 }
+
 
 .mobile-nav-links{
   height: 100%;
@@ -54,6 +59,7 @@ nav{
 }
 
 .mobile-nav-links ul{
+  color: white;
   font-size: 40px;
   text-align: center;
   height: 100%;
@@ -61,6 +67,10 @@ nav{
   flex-direction: column;
   justify-content: space-evenly;
   list-style: none;
+}
+
+.mobile-nav-links li{
+  cursor: pointer;
 }
 
 #nav-x-btn{

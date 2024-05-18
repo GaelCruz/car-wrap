@@ -5,15 +5,16 @@ const arrowPointer = document.querySelector(".pointer")
 const body = document.querySelector('body')
 const cardWrapper = document.querySelector('.card-wrapper')
 const hamBtn = document.getElementById('ham-btn')
-const hamBtnBar1 = document.getElementById('ham-btn-1')
-const hamBtnBar2 = document.getElementById('ham-btn-2')
-const hamBtnBar3 = document.getElementById('ham-btn-3')
+const mobileNavView = document.querySelector('.mobile-nav')
+const mobileNavXbtn = document.querySelector('#nav-x-btn-clicker') 
+// const hamBtnBar1 = document.getElementById('ham-btn-1')
+// const hamBtnBar2 = document.getElementById('ham-btn-2')
+// const hamBtnBar3 = document.getElementById('ham-btn-3')
 
 
 let screenWidth = window.innerWidth
 
 const breakpoint = 850
-
 let condition = true
 
 function updateStyles() {
@@ -90,4 +91,15 @@ window.addEventListener('resize', updateStyles);
 rightArrow.addEventListener("click", rightArrowClick)
 leftArrow.addEventListener("click", leftArrowClick)
 
-// console.log(carouselClicks + "this is the count")
+/////////////////mobile nav button//////////////////////
+
+const mobileNavBtnClick = () => {
+  mobileNavView.classList.add('active')
+}
+
+const mobileNaveXBtnClick = () => {
+  mobileNavView.classList.remove('active')
+}
+  
+mobileNavXbtn.addEventListener('click', mobileNaveXBtnClick)
+hamBtn.addEventListener("click", mobileNavBtnClick)
