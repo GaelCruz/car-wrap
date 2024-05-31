@@ -154,7 +154,7 @@ nav button{
 .car-wrap {
   position: relative;
   height: 70vh;
-  background-image: url(./assets/car-detailing-2.jpeg);
+  background-image: url(../assets/car-detailing-2.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -218,7 +218,7 @@ nav button{
   color: white;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-image: url(./assets/Houston-4.jpg);
+  background-image: url(../assets/Houston-4.jpg);
   background-size: cover;
   /* background-attachment: fixed; */
   display: flex;
@@ -381,7 +381,7 @@ nav button{
 }
 
 #service-1{
-  background-image: url(./assets/car-wrap-labor.jpg);
+  background-image: url(../assets/car-wrap-labor.jpg);
   background-size: cover;
   transition: 0.3s ease-out;
   overflow: hidden;
@@ -402,7 +402,7 @@ nav button{
 }
 
 #service-2{
-  background-image: url(./assets/detailing.jpeg);
+  background-image: url(../assets/detailing.jpeg);
   background-size: cover;
   transition: 0.3s ease-out;
   overflow: hidden;
@@ -419,7 +419,7 @@ nav button{
 }
 
 #service-3{
-  background-image: url(./assets/car-wrap.jpg);
+  background-image: url(../assets/car-wrap.jpg);
   background-size: cover;
   transition: 0.3s ease-out;
   overflow: hidden;
@@ -501,7 +501,7 @@ nav button{
   width: 100%;
   display: flex;
   justify-content: center;
-  background-image: url(./assets/car-pics/car4.jpg);
+  background-image: url(../assets/car-pics/car4.jpg);
   background-position-y: -200px;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -544,7 +544,7 @@ nav button{
 
 
 .contact-container{
-  background-image: url(./assets/car-pics/car1.jpg);
+  background-image: url(../assets/car-pics/car1.jpg);
   background-position-y: -150px;
   background-repeat: no-repeat;
   background-size:cover;
